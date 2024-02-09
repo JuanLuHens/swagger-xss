@@ -1,0 +1,9 @@
+{
+    "url": "https://raw.githubusercontent.com/JuanLuHens/swagger-xss/main/script.yaml",
+    "urls": [
+        {
+            "url": "https://raw.githubusercontent.com/JuanLuHens/swagger-xss/main/script.yaml",
+            "name": "redteam"
+        }
+    ]
+}
